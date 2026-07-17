@@ -1,32 +1,140 @@
-# React + TypeScript + Vite
+<div dir="rtl" align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# حاسبة الاستثمار التفاعلية
 
-Currently, two official plugins are available:
+### Interactive Investment Calculator
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+</div>
 
-## React Compiler
+<div align="center">
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-6-3178C6?style=flat-square&logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=flat-square&logo=vite)
+![Tailwind](https://img.shields.io/badge/Tailwind-4-06B6D4?style=flat-square&logo=tailwindcss)
+![Recharts](https://img.shields.io/badge/Recharts-3-8884d8?style=flat-square)
 
-## Expanding the Oxlint configuration
+</div>
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+---
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+<div dir="rtl">
+
+أداة تفاعلية شاملة لتخطيط الاستثمارات وحساب الفائدة المركبة، مع رسوم بيانية تفاعلية وتصدير تقارير Excel احترافية.
+
+</div>
+
+## الميزات
+
+<div dir="rtl">
+
+### حاسبة الفائدة المركبة
+- إدخال رأس المال الابتدائي والإيداع الشهري
+- تحديد معدل العائد السنوي ومدة الاستثمار
+- عرض القيمة النهائية وإجمالي الأرباح ونسبة النمو
+- تعديل القيم حسب التضخم (القيمة الحقيقية)
+
+### الرسم البياني التفاعلي
+- رسم بياني من نوع Stacked Area
+- يفصل بين المبلغ المستثمر والأرباح بلونين مختلفين
+- Tooltip تفاعلي يعرض النسب المئوية
+- تنسيق الأرقام بـ K و M للقراءة السهلة
+
+### جدول تفصيلي سنة بسنة
+- المبلغ المستثمر التراكمي
+- قيمة المحفظة في كل سنة
+- الأرباح التراكمية ونسبة النمو
+- القيمة الحقيقية عند تفعيل التضخم
+
+### مقارنة السيناريوهات
+- 3 سيناريوهات: متحفظ (10%)، متوسط (18%)، متفائل (35%)
+- معطيات مشتركة (رأس المال، الإيداع، المدة)
+- رسم بياني مقارن لكل السيناريوهات
+- جدول مقارنة تفصيلي
+
+### حاسبة الهدف العكسي
+- تحديد المبلغ المستهدف والسنة المستهدفة
+- حساب المبلغ الشهري المطلوب للوصول للهدف
+- كشف الحالة إذا كان الهدف محقق بالفعل
+- رسم بياني لمسار النمو مع خط الهدف
+
+### تصدير Excel احترافي
+- ملف `.xlsx` بتصميم Dark Mode
+- أرقام منسّقة بفواصل آلاف ورموز عملة
+- ألوان متدرجة لكل عمود
+- رسم بياني مدمج في الملف
+- Sheets متعددة لكل سيناريو
+
+### دعم العملات
+- الدولار الأمريكي ($)
+- الدينار الأردني (د.أ)
+
+</div>
+
+## التقنيات المستخدمة
+
+<div dir="rtl">
+
+| التقنية | الاستخدام |
+|---|---|
+| **React 19** | واجهة المستخدم التفاعلية |
+| **TypeScript** | أنواع البيانات الآمنة |
+| **Vite** | بناء سريع وتطوير محلي |
+| **Tailwind CSS** | تصميم Dark Mode عصري |
+| **Recharts** | الرسوم البيانية التفاعلية |
+| **ExcelJS** | تصدير تقارير Excel |
+| **file-saver** | تحميل الملفات |
+
+</div>
+
+## التشغيل
+
+<div dir="rtl">
+
+### المتطلبات
+- Node.js 18+
+- npm أو yarn
+
+### التثبيت والتشغيل
+
+```bash
+# استنساخ المستودع
+git clone https://github.com/Raid465/investment-calculator.git
+cd investment-calculator
+
+# تثبيت التبعيات
+npm install
+
+# تشغيل خادم التطوير
+npm run dev
+
+# بناء للإنتاج
+npm run build
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+</div>
+
+## هيكل المشروع
+
+```
+src/
+├── App.tsx          # المكون الرئيسي لجميع الميزات
+├── main.tsx         # نقطة الدخول
+└── index.css        # أنماط Tailwind الأساسية
+```
+
+## الرخصة
+
+<div dir="rtl">
+
+هذا المشروع مفتوح المصدر ويمكن استخدامه لأي غرض.
+
+</div>
+
+---
+
+<div dir="rtl" align="center">
+
+**جميع الحسابات تقريبية ولا تُعتبر نصيحة مالية**
+
+</div>
