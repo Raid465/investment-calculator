@@ -1,8 +1,8 @@
-<div dir="rtl" align="center">
+<div align="center">
 
-# حاسبة الاستثمار التفاعلية
+# Investment Calculator
 
-### Interactive Investment Calculator
+### Interactive Compound Interest Calculator
 
 </div>
 
@@ -18,123 +18,102 @@
 
 ---
 
-<div dir="rtl">
+A comprehensive interactive tool for investment planning and compound interest calculation, with dynamic charts and professional Excel report export.
 
-أداة تفاعلية شاملة لتخطيط الاستثمارات وحساب الفائدة المركبة، مع رسوم بيانية تفاعلية وتصدير تقارير Excel احترافية.
+## Features
 
-</div>
+### Compound Interest Calculator
+- Initial capital and monthly deposit inputs
+- Expected annual return rate and investment duration
+- Final value, total earnings, and growth percentage display
+- Inflation adjustment (real value)
 
-## الميزات
+### Interactive Charts
+- Stacked Area chart separating invested amount from earnings
+- Interactive tooltips with percentage breakdown
+- K/M number formatting for easy reading
 
-<div dir="rtl">
+### Year-by-Year Table
+- Cumulative invested amount
+- Portfolio value each year
+- Cumulative earnings and growth rate
+- Real value when inflation is enabled
 
-### حاسبة الفائدة المركبة
-- إدخال رأس المال الابتدائي والإيداع الشهري
-- تحديد معدل العائد السنوي ومدة الاستثمار
-- عرض القيمة النهائية وإجمالي الأرباح ونسبة النمو
-- تعديل القيم حسب التضخم (القيمة الحقيقية)
+### Scenario Comparison
+- 3 scenarios: Conservative (10%), Moderate (18%), Optimistic (35%)
+- Shared inputs (capital, deposit, duration)
+- Comparative chart for all scenarios
+- Detailed comparison table
 
-### الرسم البياني التفاعلي
-- رسم بياني من نوع Stacked Area
-- يفصل بين المبلغ المستثمر والأرباح بلونين مختلفين
-- Tooltip تفاعلي يعرض النسب المئوية
-- تنسيق الأرقام بـ K و M للقراءة السهلة
+### Reverse Goal Calculator
+- Set target amount and target year
+- Calculate required monthly payment to reach goal
+- Detect if goal is already achievable
+- Growth projection chart with goal reference line
 
-### جدول تفصيلي سنة بسنة
-- المبلغ المستثمر التراكمي
-- قيمة المحفظة في كل سنة
-- الأرباح التراكمية ونسبة النمو
-- القيمة الحقيقية عند تفعيل التضخم
+### Professional Excel Export
+- `.xlsx` file with dark mode design
+- Formatted numbers with thousand separators and currency symbols
+- Color-coded columns with gradients
+- Embedded chart in the file
+- Multiple sheets for each scenario
 
-### مقارنة السيناريوهات
-- 3 سيناريوهات: متحفظ (10%)، متوسط (18%)، متفائل (35%)
-- معطيات مشتركة (رأس المال، الإيداع، المدة)
-- رسم بياني مقارن لكل السيناريوهات
-- جدول مقارنة تفصيلي
+### Currency Support
+- US Dollar ($)
+- Jordanian Dinar (د.أ)
 
-### حاسبة الهدف العكسي
-- تحديد المبلغ المستهدف والسنة المستهدفة
-- حساب المبلغ الشهري المطلوب للوصول للهدف
-- كشف الحالة إذا كان الهدف محقق بالفعل
-- رسم بياني لمسار النمو مع خط الهدف
+## Tech Stack
 
-### تصدير Excel احترافي
-- ملف `.xlsx` بتصميم Dark Mode
-- أرقام منسّقة بفواصل آلاف ورموز عملة
-- ألوان متدرجة لكل عمود
-- رسم بياني مدمج في الملف
-- Sheets متعددة لكل سيناريو
-
-### دعم العملات
-- الدولار الأمريكي ($)
-- الدينار الأردني (د.أ)
-
-</div>
-
-## التقنيات المستخدمة
-
-<div dir="rtl">
-
-| التقنية | الاستخدام |
+| Technology | Usage |
 |---|---|
-| **React 19** | واجهة المستخدم التفاعلية |
-| **TypeScript** | أنواع البيانات الآمنة |
-| **Vite** | بناء سريع وتطوير محلي |
-| **Tailwind CSS** | تصميم Dark Mode عصري |
-| **Recharts** | الرسوم البيانية التفاعلية |
-| **ExcelJS** | تصدير تقارير Excel |
-| **file-saver** | تحميل الملفات |
+| **React 19** | Interactive UI |
+| **TypeScript** | Type-safe code |
+| **Vite** | Fast build and dev server |
+| **Tailwind CSS** | Dark mode styling |
+| **Recharts** | Interactive charts |
+| **ExcelJS** | Excel report export |
+| **file-saver** | File downloads |
 
-</div>
+## Getting Started
 
-## التشغيل
-
-<div dir="rtl">
-
-### المتطلبات
+### Prerequisites
 - Node.js 18+
-- npm أو yarn
+- npm or yarn
 
-### التثبيت والتشغيل
+### Installation
 
 ```bash
-# استنساخ المستودع
+# Clone the repository
 git clone https://github.com/Raid465/investment-calculator.git
 cd investment-calculator
 
-# تثبيت التبعيات
+# Install dependencies
 npm install
 
-# تشغيل خادم التطوير
+# Start dev server
 npm run dev
 
-# بناء للإنتاج
+# Build for production
 npm run build
 ```
 
-</div>
-
-## هيكل المشروع
+## Project Structure
 
 ```
 src/
-├── App.tsx          # المكون الرئيسي لجميع الميزات
-├── main.tsx         # نقطة الدخول
-└── index.css        # أنماط Tailwind الأساسية
+├── App.tsx          # Main component with all features
+├── main.tsx         # Entry point
+└── index.css        # Tailwind base styles
 ```
 
-## الرخصة
+## License
 
-<div dir="rtl">
-
-هذا المشروع مفتوح المصدر ويمكن استخدامه لأي غرض.
-
-</div>
+This project is open source and available for any use.
 
 ---
 
-<div dir="rtl" align="center">
+<div align="center">
 
-**جميع الحسابات تقريبية ولا تُعتبر نصيحة مالية**
+**All calculations are approximate and do not constitute financial advice.**
 
 </div>
